@@ -13,7 +13,6 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.Parameters;
 
 import com.comcast.crm.generic.databaseUtility.DataBaseUtility;
 import com.comcast.crm.generic.fileUtility.ExcelUtility;
@@ -52,8 +51,9 @@ public class BaseClass extends WebDriverUtility_Mine {
 	@BeforeClass(groups = {"smokeTest","regressionTest"})
 	public void configBC(/*String browser*/) throws Exception {
 
-		String BROWSER = //browser;
-				flib.getDataFromProperties("browser");
+		String BROWSER = System.getProperty("browser",flib.getDataFromProperties("browser"));
+/*Used for parallel Execution */	//browser;
+/*Get DataFromProperties */ //flib.getDataFromProperties("browser");
 
 		if (BROWSER.equals("chrome")) {
 			driver = new ChromeDriver();
@@ -75,9 +75,12 @@ public class BaseClass extends WebDriverUtility_Mine {
 	@BeforeMethod(groups = {"smokeTest","regressionTest"})
 	public void configBM() throws Exception {
 		LoginPage lp = new LoginPage(driver);
-		String URL = flib.getDataFromProperties("url");
+	/*	String URL = flib.getDataFromProperties("url");
 		String USERNAME = flib.getDataFromProperties("username");
-		String PASSWORD = flib.getDataFromProperties("password");
+		String PASSWORD = flib.getDataFromProperties("password");*/
+		String URL = System.getProperty("url",flib.getDataFromProperties("url"));
+		String USERNAME = System.getProperty("username",flib.getDataFromProperties("username"));
+		String PASSWORD =System.getProperty("password",flib.getDataFromProperties("password"));
 		waitForPageLoad(driver);
 		driver.manage().window().maximize();
 		driver.get(URL);

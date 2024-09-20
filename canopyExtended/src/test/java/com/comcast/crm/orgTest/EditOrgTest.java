@@ -7,7 +7,7 @@ public class EditOrgTest {
 public void editOrgTest() {
 	System.out.println("Done");
 }
-public void editOrgTestwithPH() {
+public void editOrgwithPHTest() {
 	System.out.println("Done");
 }
 }
