@@ -1,0 +1,253 @@
+Name	Precondition	Objective	Test Script (Step-by-Step) - Step	Test Script (Step-by-Step) - Test Data	Test Script (Step-by-Step) - Expected Result	Test Script (Plain Text)	Test Script (BDD)
+Login with valid credential	"Build should be installed properly /Valid URL should be present
+Valid login credential should present"	Verify user should be able to login with valid login credential	Open the browser and enter the valid URL	https://test.leadhornet.in/Login	"Login page should display
+Following components should display:
+Username Textbox
+Password Textbox
+Login button
+
+"		
+			Enter valid Username	8111112222			
+			"Enter valid Password
+
+"	1			
+			Click on login button	NA	Dashboard page should be displayed		
+Login with invalid credential	"Build should be installed properly /Valid URL should be present
+invalid login credential should present"	"Verify user should not be able to login with valid username and invalid 
+password"	Open the browser and enter the valid URL	https://test.leadhornet.in/Login	"Login page should display
+Following components should display:
+Username Textbox
+Password Textbox
+Login button
+
+"		
+			Enter valid Username	"6545698745
+"			
+			"Enter invalid Password
+
+"	1			
+			Click on login button	NA	"Proper error message should be displayed
+
+"		
+Login with invalid credential	"Build should be installed properly /Valid URL should be present
+invalid username and valid username credential should present"	"Verify user should not be able to login with invalid username and valid 
+password"	Open the browser and enter the valid URL	https://test.leadhornet.in/Login	"Login page should display
+Following components should display:
+Username Textbox
+Password Textbox
+Login button
+
+"		
+			Enter invalid Username	8111112222			
+			"Enter valid Password
+
+"				
+			Click on login button	NA	"Proper error message should be displayed
+
+"		
+Login with  blank details	Build shoul be installed properly /Valid URL should be present	Verify user should not be able to login with blank details	Open the browser and enter the valid URL	https://test.leadhornet.in/Login	"Login page should display
+Following components should display:
+Username Textbox
+Password Textbox
+Login button
+
+"		
+			Enter null login credential and click on login button	NA	Proper error message should be displayed		
+Create Leads with valid data	"Build should be installed properly /Valid URL should be present
+Valid login credential should present"	Verify user should be able to create lead with valid data	Open the browser and enter the valid URL	https://test.leadhornet.in/Login	Login page should display		
+			Login with valid credential	"username:8111112222
+password: 1"	Dashboard page should be displayed		
+			click on leads component	NA	Lead list page should be displayed		
+			click on create lead button	NA	create lead page should be displayed		
+			enter the valid data in all field	valid data	"confirmation message should displayed
+lead should be visible in lead list page"		
+Create users with valid data	"Build should be installed properly /Valid URL should be present
+Valid login credential should present"	Verify user should be able to create user with valid data	Open the browser and enter the valid URL	https://test.leadhornet.in/Login	Login page should display		
+			Login with valid credential	"username:8111112222
+password: 1"	Dashboard page should be displayed		
+			click on users component	NA	user list page should be displayed		
+			click on create user button	Na	create user window should be displayed		
+			enter the valid data in all field	valid data	"confirmation message should displayed
+user should be visible in users list page"		
+create team with existing member	"Build should be installed properly /Valid URL should be present
+Valid login credential should present"	Verify user should be able to create team with existing users	Open the browser and enter the valid URL	https://test.leadhornet.in/Login	Login page should display		
+			Login with valid credential	"username:8111112222
+password: 1"	Dashboard page should be displayed		
+			click on users component	NA	user list page should be displayed		
+			click on manage teams button	Na	manage teams page should be displayed		
+			click on create team buton	NA	create team page should be displayed		
+			enter the details in required field		"confirmation message should displayed
+team should be visible in team list page"		
+Modify team with existing members	"Build should be installed properly /Valid URL should be present
+Valid login credential should present"	Verify user should be able to manage team with existing users	Open the browser and enter the valid URL	https://test.leadhornet.in/Login	Login page should display		
+			Login with valid credential	"username:8111112222
+password: 1"	Dashboard page should be displayed		
+			click on users component	NA	user list page should be displayed		
+			click on manage teams button	Na	manage teams page should be displayed		
+			click on existing teams manage teams button	NA	existing team page should be displayed		
+			add existing member from dropdown	NA	"confirmation message should displayed
+team should be updated and visible in team list page"		
+Create pool with valid data	"Build should be installed properly /Valid URL should be present
+Valid login credential should present"	Verify user should be able to create pool with valid data	Open the browser and enter the valid URL	https://test.leadhornet.in/Login	Login page should display		
+			Login with valid credential	"username:8111112222
+password: 1"	Dashboard page should be displayed		
+			click on pool component	NA	pool list page should be displayed		
+			click on create pool button	NA	create pool page should be displayed		
+			enter the valid data in all field		"confirmation message should displayed
+pool should be visible in pool list page"		
+Create lead from existing pool 	"Build should be installed properly /Valid URL should be present
+Valid login credential should present"	Verify user should be able to createleadl from existing pool data	Open the browser and enter the valid URL	https://test.leadhornet.in/Login	Login page should display		
+			Login with valid credential	"username:8111112222
+password: 1"	Dashboard page should be displayed		
+			click on pool component	NA	pool list page should be displayed		
+			click on existing pool members move to lead button	NA	lead creation page should be displayed		
+			enter the valid data in required field		"confirmation message should displayed
+lead should be visible in lead list page"		
+Check overall report	"Build should be installed properly /Valid URL should be present
+Valid login credential should present"	Verify user should be able to check overall report from report page	Open the browser and enter the valid URL	https://test.leadhornet.in/Login	Login page should display		
+			Login with valid credential	"username:8111112222
+password: 1"	Dashboard page should be displayed		
+			click on report component	NA	overall report  page should be displayed		
+			select the seach criteria and click on search		"relevant report should be displayed
+and user can download the data"		
+Create nodes with valid data	"Build should be installed properly /Valid URL should be present
+Valid login credential should present"	Verify user should be able to create nodes with valid data	Open the browser and enter the valid URL	https://test.leadhornet.in/Login	Login page should display		
+			Login with valid credential	"username:8111112222
+password: 1"	Dashboard page should be displayed		
+			click on profile module	NA	profile dropdown should be dropped		
+			click on nodes module	NA	node list page page should be displayed		
+			click on create new nodes button	NA	new node window page should be displayed		
+			enter valid data to required field and click on create	hyderabad	"confirmation message should displayed
+lead should be visible in lead list page"		
+Create products with valid data	"Build should be installed properly /Valid URL should be present
+Valid login credential should present"	Verify user should be able to create products with valid data	Open the browser and enter the valid URL	https://test.leadhornet.in/Login	Login page should display		
+			Login with valid credential	"username:8111112222
+password: 1"	Dashboard page should be displayed		
+			click on profile module	NA	profile dropdown should be dropped		
+			click on products module	NA	products list page page should be displayed		
+			click on create products button	NA	products window page should be displayed		
+			enter valid data to required field and click on create	cars	"confirmation message should displayed
+products should be visible in products list page"		
+Create stages with valid data	"Build should be installed properly /Valid URL should be present
+Valid login credential should present"	Verify user should be able to create stages with valid data	Open the browser and enter the valid URL	https://test.leadhornet.in/Login	Login page should display		
+			Login with valid credential	"username:8111112222
+password: 1"	Dashboard page should be displayed		
+			click on profile module	NA	profile dropdown should be dropped		
+			click on stages module	NA	stages list page page should be displayed		
+			click on create products button	NA	stages window page should be displayed		
+			enter valid data to required field and click on create	purchase order	"confirmation message should displayed
+stages should be visible in stages list page"		
+Create Follow-Up Reasons with valid data	"Build should be installed properly /Valid URL should be present
+Valid login credential should present"	Verify user should be able to create Follow-Up Reasons with valid data	Open the browser and enter the valid URL	https://test.leadhornet.in/Login	Login page should display		
+			Login with valid credential	"username:8111112222
+password: 1"	Dashboard page should be displayed		
+			click on profile module	NA	profile dropdown should be dropped		
+			click on Follow-Up Reasons module	NA	Follow-Up Reasons list page page should be displayed		
+			click on create Follow-Up Reasons button	NA	Follow-Up Reasons window page should be displayed		
+			enter valid data to required field and click on create	phone is not reachable	"confirmation message should displayed
+Follow-Up Reasons should be visible in Follow-Up Reasons list page"		
+Create Unconverted Reasons with valid data	"Build should be installed properly /Valid URL should be present
+Valid login credential should present"	Verify user should be able to create Unconverted Reasons with valid data	Open the browser and enter the valid URL	https://test.leadhornet.in/Login	Login page should display		
+			Login with valid credential	"username:8111112222
+password: 1"	Dashboard page should be displayed		
+			click on profile module	NA	profile dropdown should be dropped		
+			click on Unconverted Reasons module	NA	Unconverted Reasons list page page should be displayed		
+			click on create Unconverted Reasons button	NA	Unconverted Reasons window page should be displayed		
+			enter valid data to required field and click on create	cars	"confirmation message should displayed
+Unconverted Reasons should be visible in Unconverted Reasons list page"		
+Edit Leads with valid data	"Build should be installed properly /Valid URL should be present
+Valid login credential should present"	Verify user should be able to edit  existing lead with valid data	Open the browser and enter the valid URL	https://test.leadhornet.in/Login	Login page should display		
+			Login with valid credential	"username:8111112222
+password: 1"	Dashboard page should be displayed		
+			click on leads component	NA	Lead list page should be displayed		
+			click on existing lead from lead list page	NA	lead details page should be displayed		
+			click on edit button from lead complete details page	NA	edit lead information window should display		
+			enter the valid data in required field		"confirmation message should displayed
+lead should be updated visible in lead list page"		
+Close Leads from existing	"Build should be installed properly /Valid URL should be present
+Valid login credential should present"	Verify user should be able to close  existing lead with reason	Open the browser and enter the valid URL	https://test.leadhornet.in/Login	Login page should display		
+			Login with valid credential	"username:8111112222
+password: 1"	Dashboard page should be displayed		
+			click on leads component	NA	Lead list page should be displayed		
+			click on existing lead from lead list page	NA	lead details page should be displayed		
+			click on close button from lead details page	NA	closure form window page should displayed		
+			enter the valid data in required field and click on close		"confirmation message should displayed
+lead should be closed remove from open lead list page"		
+Reopen Leads from existing	"Build should be installed properly /Valid URL should be present
+Valid login credential should present"	Verify user should be able to reopen existing close lead with reason	Open the browser and enter the valid URL	https://test.leadhornet.in/Login	Login page should display		
+			Login with valid credential	"username:8111112222
+password: 1"	Dashboard page should be displayed		
+			click on leads component	NA	Lead list page should be displayed		
+			choose a close lead from the list	NA	lead details page should be displayed		
+			click on lock button from lead details page	NA	re-open form window page should displayed		
+			enter the valid data in required field and click on reopen		"confirmation message should displayed
+lead should beopen and  it displayed in list page"		
+follow-ups Leads from existing lead	"Build should be installed properly /Valid URL should be present
+Valid login credential should present"	Verify user should be able to follow-ups existing lead with valid data	Open the browser and enter the valid URL	https://test.leadhornet.in/Login	Login page should display		
+			Login with valid credential	"username:8111112222
+password: 1"	Dashboard page should be displayed		
+			click on leads component	NA	Lead list page should be displayed		
+			choose a lead from the list	NA	lead details page should be displayed		
+			click on follow-ups button from lead details page	NA	update follow-up window page should displayed		
+			enter the valid data in required field and click on update follow-up		"confirmation message should displayed
+the updated follow-ups should be visible"		
+Enquiry Transfer of a Leads from existing lead	"Build should be installed properly /Valid URL should be present
+Valid login credential should present"	Verify user should be able to transfer leads to another user	Open the browser and enter the valid URL	https://test.leadhornet.in/Login	Login page should display		
+			Login with valid credential	"username:8111112222
+password: 1"	Dashboard page should be displayed		
+			click on leads component	NA	Lead list page should be displayed		
+			choose a lead from the list	NA	lead details page should be displayed		
+			click on Enquiry Transfer button from lead details page	NA	Enquiry Transfer window page should displayed		
+			enter the valid data in required field and click on Transfer now		"confirmation message should displayed
+the lead should be transfer to the selected user"		
+Send quotation to lead	"Build should be installed properly /Valid URL should be present
+Valid login credential should present"	Verify user should be able to send quotation to the lead	Open the browser and enter the valid URL	https://test.leadhornet.in/Login	Login page should display		
+			Login with valid credential	"username:8111112222
+password: 1"	Dashboard page should be displayed		
+			click on leads component	NA	Lead list page should be displayed		
+			choose a lead from the list	NA	lead details page should be displayed		
+			click on quotation button from lead details page	NA	Quotation window page should displayed		
+			enter the valid data in required field and click on upload button		"confirmation message should displayed
+and the quotation should updated "		
+update documents for lead	"Build should be installed properly /Valid URL should be present
+Valid login credential should present"	Verify user should be able to update general documents to lead	Open the browser and enter the valid URL	https://test.leadhornet.in/Login	Login page should display		
+			Login with valid credential	"username:8111112222
+password: 1"	Dashboard page should be displayed		
+			click on leads component	NA	Lead list page should be displayed		
+			choose a lead from the list	NA	lead details page should be displayed		
+			click on general documents button from lead details page	NA	documents window page should displayed		
+			enter the valid data in required field and click on upload button		"confirmation message should displayed
+and the documents should updated "		
+Add team member into a lead	"Build should be installed properly /Valid URL should be present
+Valid login credential should present"	Verify user should be able to add a team member to lead list page	Open the browser and enter the valid URL	https://test.leadhornet.in/Login	Login page should display		
+			Login with valid credential	"username:8111112222
+password: 1"	Dashboard page should be displayed		
+			click on leads component	NA	Lead list page should be displayed		
+			choose a lead from the list	NA	lead details page should be displayed		
+			click on teams button from lead details page	NA	teams window page should displayed		
+			add existing member from dropdown		"confirmation message should displayed
+and team member should be added"		
+update stage of a lead	"Build should be installed properly /Valid URL should be present
+Valid login credential should present"	Verify user should be able to update the lead stages in lead details page	Open the browser and enter the valid URL	https://test.leadhornet.in/Login	Login page should display		
+			Login with valid credential	"username:8111112222
+password: 1"	Dashboard page should be displayed		
+			click on leads component	NA	Lead list page should be displayed		
+			choose a lead from the list	NA	lead details page should be displayed		
+			click on stages button from lead details page	NA	stages window page should displayed		
+			choose stages from dropdown and click on update		"confirmation message should displayed
+and stages  should be updated"		
+Analyse enquires	"Build should be installed properly /Valid URL should be present
+Valid login credential should present"	Verify user should be able to analyse all enquiries in lead details page	Open the browser and enter the valid URL	https://test.leadhornet.in/Login	Login page should display		
+			Login with valid credential	"username:8111112222
+password: 1"	Dashboard page should be displayed		
+			click on leads component	NA	Lead list page should be displayed		
+			choose a lead from the list	NA	lead details page should be displayed		
+			click on enquiries button from lead details page	NA	enquiries page should displayed		
+Analyse timeline	"Build should be installed properly /Valid URL should be present
+Valid login credential should present"	Verify user should be able to analyse timeline in lead details page	Open the browser and enter the valid URL	https://test.leadhornet.in/Login	Login page should display		
+			Login with valid credential	"username:8111112222
+password: 1"	Dashboard page should be displayed		
+			click on leads component	NA	Lead list page should be displayed		
+			choose a lead from the list	NA	lead details page should be displayed		
+			click on timelines button from lead details page	NA	"timeslines page should displayed and
+all previous activity should be displayed"		
