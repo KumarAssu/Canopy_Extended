@@ -12,4 +12,9 @@ public class EditContactTest {
 	public void editContactPhoneNumberTest() {
 		System.out.println("Hiii");
 	}
+	@Test
+	public void editedContactPhoneNumberTest() {
+		System.out.println("Hiii");
+	}
+	
 }
