@@ -20,4 +20,8 @@ public class EditContactTest {
 	public void editEmailTest() {
 		System.out.println("Hiii");
 	}
+	@Test
+	public void ediEmailTest() {
+		System.out.println("Hiii");
+	}
 }
