@@ -16,4 +16,8 @@ public class EditContactTest {
 	public void editContactEmailTest() {
 		System.out.println("Hiii");
 	}
+	@Test
+	public void editEmailTest() {
+		System.out.println("Hiii");
+	}
 }
